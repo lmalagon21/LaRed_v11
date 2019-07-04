@@ -9,6 +9,10 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".ingresar_nuevopwd_negocio">
+        </activity>
+        <activity android:name=".ingresar_nuevopwd_cliente">
+        </activity>
         <activity android:name=".registro_negocio1">
         </activity>
         <activity android:name=".registro_cliente3">

@@ -86,5 +86,15 @@ class olvido_password : AppCompatActivity() {
                 swRPC.visibility = (View.VISIBLE)
             }
         }
+
+        recuperar_pwd_cliente.setOnClickListener {
+            val intent = Intent(this, ingresar_nuevopwd_cliente :: class.java)
+            startActivity(intent)
+        }
+
+        recuperar_pwd_negocio.setOnClickListener {
+            val intent = Intent(this, ingresar_nuevopwd_negocio :: class.java)
+            startActivity(intent)
+        }
     }
 }
