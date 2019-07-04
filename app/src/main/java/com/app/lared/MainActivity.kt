@@ -12,30 +12,36 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         val registroNuevoNegocio : Button = findViewById(R.id.negocio)
         registroNuevoNegocio.setOnClickListener {
             val intent = Intent(this, registro_negocio :: class.java)
             startActivity(intent)
         }
+
         val registroNuevoCliente : Button = findViewById(R.id.cliente)
         registroNuevoCliente.setOnClickListener {
             val intent = Intent(this, registro_cliente :: class.java)
             startActivity(intent)
         }
+
         val usoAppNegocio : Button = findViewById(R.id.entrar_red_negocio)
         usoAppNegocio.setOnClickListener {
             val intent = Intent(this, uso_app_negocio :: class.java)
             startActivity(intent)
         }
+
         val usoAppCliente : Button = findViewById(R.id.entrar_red_cliente)
         usoAppCliente.setOnClickListener {
             val intent = Intent(this, uso_app_cliente :: class.java)
             startActivity(intent)
 
         }
+
         val swC = findViewById<Switch>(R.id.es_cliente)
         val swN = findViewById<Switch>(R.id.es_negocio)
         val swPW = findViewById<Switch>(R.id.olvido_pwd)
+
         swC?.setOnClickListener {
             if (swC.isChecked) {
                 swN.isEnabled = (false)
@@ -49,6 +55,7 @@ class MainActivity : AppCompatActivity() {
                 usoAppNegocio.isEnabled = (false)
                 }
         }
+
         swN?.setOnClickListener {
             if (swN.isChecked) {
                 swC.isEnabled = (false)
@@ -62,6 +69,7 @@ class MainActivity : AppCompatActivity() {
                 usoAppNegocio.isEnabled = (false)
                 }
         }
+
         swPW?.setOnClickListener {
             if (swPW.isChecked) {
                 swC.isEnabled = (false)
