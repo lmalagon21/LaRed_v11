@@ -5,7 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Switch
+import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,14 +30,57 @@ class MainActivity : AppCompatActivity() {
 
         val usoAppNegocio : Button = findViewById(R.id.entrar_red_negocio)
         usoAppNegocio.setOnClickListener {
-            val intent = Intent(this, uso_app_negocio :: class.java)
-            startActivity(intent)
+            val movil = this.movil.getText().toString()
+            val password = this.password.getText().toString()
+            if (movil.equals("")) {
+                Toast.makeText(this, "Debe ingresar el número móvil",
+                    Toast.LENGTH_LONG).show();
+            } else {
+                if (movil.equals(" ")) {
+                    Toast.makeText(
+                        this, "Debe ingresar el número móvil",
+                        Toast.LENGTH_LONG
+                    ).show();
+                } else {
+                    if (password.equals("")) {
+                        Toast.makeText(
+                            this, "Debe ingresar la contraseña",
+                            Toast.LENGTH_LONG
+                        ).show();
+                    } else {
+                        val intent = Intent(this, uso_app_negocio::class.java)
+                        startActivity(intent)
+                    }
+                }
+            }
         }
+
 
         val usoAppCliente : Button = findViewById(R.id.entrar_red_cliente)
         usoAppCliente.setOnClickListener {
-            val intent = Intent(this, uso_app_cliente :: class.java)
-            startActivity(intent)
+            val movil = this.movil.getText().toString()
+            val password = this.password.getText().toString()
+            if (movil.equals("")) {
+                Toast.makeText(this, "Debe ingresar el número móvil",
+                    Toast.LENGTH_LONG).show();
+            } else {
+                if (movil.equals(" ")) {
+                    Toast.makeText(
+                        this, "Debe ingresar el número móvil",
+                        Toast.LENGTH_LONG
+                    ).show();
+                } else {
+                    if (password.equals("")) {
+                        Toast.makeText(
+                            this, "Debe ingresar la contraseña",
+                            Toast.LENGTH_LONG
+                        ).show();
+                    } else {
+                        val intent = Intent(this, uso_app_cliente::class.java)
+                        startActivity(intent)
+                    }
+                }
+            }
 
         }
 
@@ -88,6 +134,5 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
-
     }
 }

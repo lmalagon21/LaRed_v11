@@ -60,8 +60,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/transferir_puntos" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="160dp" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginStart="160dp" android:layout_marginBottom="136dp" android:background="#FBFBFB"
-            android:textColor="#FF5722"/>
+            android:layout_marginLeft="16dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="16dp" android:layout_marginBottom="16dp" android:background="#FBFBFB"
+            android:textColor="#FF9800"/>
+    <Button
+            android:text="Cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelar_transferir" android:background="#FBFBFB"
+            android:textColor="#F44336" app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp" android:layout_marginBottom="17dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

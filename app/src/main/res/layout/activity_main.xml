@@ -43,7 +43,7 @@
             android:maxLength="10"
             android:textColor="#3F51B5"
             android:shadowColor="#F44336" android:gravity="center"
-            app:layout_constraintStart_toStartOf="@+id/contraseña"
+            app:layout_constraintStart_toStartOf="@+id/password"
             android:layout_marginBottom="23dp" app:layout_constraintBottom_toTopOf="@+id/passwd"/>
     <TextView
             android:text="@string/contrase_a"
@@ -53,13 +53,13 @@
             android:background="#FBFBFB"
             android:textColor="#009688"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/contraseña"/>
+            app:layout_constraintBottom_toTopOf="@+id/password"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:ems="10"
-            android:id="@+id/contraseña"
+            android:id="@+id/password"
             android:maxLength="15"
             android:textColor="#3F51B5" android:gravity="center"
             app:layout_constraintStart_toStartOf="parent"
@@ -123,7 +123,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/es_cliente" android:textColor="#009688"
-            app:layout_constraintStart_toEndOf="@+id/contraseña" app:layout_constraintEnd_toEndOf="@+id/contraseña"
+            app:layout_constraintStart_toEndOf="@+id/password" app:layout_constraintEnd_toEndOf="@+id/password"
             android:layout_marginBottom="16dp" app:layout_constraintBottom_toTopOf="@+id/entrar_red_cliente"/>
     <Switch
             android:text="@string/olvidaste_tu_contrase_a"

@@ -60,7 +60,7 @@
             android:id="@+id/newpwd_cliente1"
             android:textColor="#9C27B0"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="256dp" app:layout_constraintEnd_toEndOf="parent"/>
+            android:layout_marginTop="256dp" app:layout_constraintEnd_toEndOf="parent" android:gravity="center"/>
     <TextView
             android:text="Repita la nueva contraseña"
             android:layout_width="wrap_content"
