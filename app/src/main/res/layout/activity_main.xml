@@ -12,11 +12,12 @@
             android:layout_width="129dp"
             android:layout_height="46dp"
             android:id="@+id/entrar_red_cliente"
-            android:background="#FBFBFB" android:textColor="#009688"
+            android:background="#FBFBFB" android:textColor="#673AB7"
             android:visibility="visible"
+            android:enabled="false"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBaseline_toBaselineOf="@+id/entrar_red_negocio"
-            app:layout_constraintEnd_toEndOf="parent" android:enabled="false"/>
+            app:layout_constraintEnd_toEndOf="parent"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,8 +44,8 @@
             android:maxLength="10"
             android:textColor="#3F51B5"
             android:shadowColor="#F44336" android:gravity="center"
-            app:layout_constraintStart_toStartOf="@+id/password"
-            android:layout_marginBottom="23dp" app:layout_constraintBottom_toTopOf="@+id/passwd"/>
+            app:layout_constraintStart_toStartOf="@+id/password" android:layout_marginBottom="23dp"
+            app:layout_constraintBottom_toTopOf="@+id/passwd"/>
     <TextView
             android:text="@string/contrase_a"
             android:layout_width="wrap_content"
@@ -62,67 +63,62 @@
             android:id="@+id/password"
             android:maxLength="15"
             android:textColor="#3F51B5" android:gravity="center"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginBottom="36dp" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/es_negocio"/>
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginBottom="36dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/es_negocio"/>
     <Button
             android:text="@string/vamos_a_lared"
             android:layout_width="129dp"
             android:layout_height="46dp"
             android:id="@+id/entrar_red_negocio"
-            android:background="#FBFBFB" android:textColor="#009688"
+            android:background="#FBFBFB" android:textColor="#FF5722"
             android:visibility="visible"
+            android:enabled="false"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.499" android:enabled="false"/>
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
     <TextView
-            android:text="Donde todas tus compras se convierten en dinero"
+            android:text="Donde todas tus compras se convierten en dinero $$"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/msjbienvenida"
             android:textColor="#009688"
-            android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/entrar_red_cliente" android:layout_marginEnd="44dp"
-            android:layout_marginRight="44dp" app:layout_constraintEnd_toEndOf="parent"/>
-    <TextView
-            android:text="@string/eres_nuevo_en_la_red"
-            android:layout_width="wrap_content"
-            android:layout_height="29dp"
-            android:id="@+id/usernew"
-            android:textColor="#009688"
-            app:layout_constraintTop_toTopOf="@+id/entrar_red_cliente" android:layout_marginTop="179dp"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@+id/negocio"
-            android:layout_marginBottom="180dp"/>
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/entrar_red_cliente" app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"/>
     <Button
             android:text="@string/negocio"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="91dp"
+            android:layout_height="33dp"
             android:id="@+id/negocio"
-            android:background="#FBFBFB" android:textColor="#009688"
+            android:background="#FBFBFB" android:textColor="#FF5722"
             android:linksClickable="true"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="20dp"
-            android:layout_marginLeft="48dp" android:layout_marginStart="48dp"
-            app:layout_constraintTop_toBottomOf="@+id/usernew"/>
+            android:visibility="invisible" android:enabled="false"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="50dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="50dp"
+            android:layout_marginBottom="112dp"/>
     <Button
             android:text="@string/cliente"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="95dp"
+            android:layout_height="33dp"
             android:id="@+id/cliente"
-            android:background="#FBFBFB" android:textColor="#009688"
-            android:layout_marginTop="20dp"
-            app:layout_constraintTop_toBottomOf="@+id/usernew" app:layout_constraintStart_toEndOf="@+id/usernew"/>
+            android:background="#FBFBFB" android:textColor="#673AB7"
+            android:visibility="invisible"
+            android:enabled="false"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="57dp"
+            android:layout_marginRight="57dp" android:layout_marginBottom="112dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
     <Switch
             android:text="@string/es_negocio"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:id="@+id/es_negocio" android:textColor="#009688"
+            android:id="@+id/es_negocio" android:textColor="#FF5722"
             app:layout_constraintTop_toTopOf="@+id/es_cliente" app:layout_constraintBottom_toBottomOf="@+id/es_cliente"
-            app:layout_constraintEnd_toStartOf="@+id/entrar_red_negocio"/>
+            app:layout_constraintEnd_toStartOf="@+id/entrar_red_cliente"/>
     <Switch
             android:text="@string/es_cliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/es_cliente" android:textColor="#009688"
+            android:id="@+id/es_cliente" android:textColor="#673AB7"
             app:layout_constraintStart_toEndOf="@+id/password" app:layout_constraintEnd_toEndOf="@+id/password"
             android:layout_marginBottom="16dp" app:layout_constraintBottom_toTopOf="@+id/entrar_red_cliente"/>
     <Switch
@@ -130,7 +126,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/olvido_pwd" android:textColor="#009688"
+            android:checked="false"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="5dp" app:layout_constraintEnd_toEndOf="parent" android:checked="false"/>
+            android:layout_marginBottom="16dp" app:layout_constraintEnd_toEndOf="parent"/>
+    <Switch
+            android:text="Eres Nuevo en LaRed?"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:id="@+id/sw_nuevo_enlared" android:textColor="#2196F3"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="64dp"
+            app:layout_constraintTop_toBottomOf="@+id/msjbienvenida" app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

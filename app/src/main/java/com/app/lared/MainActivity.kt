@@ -87,6 +87,7 @@ class MainActivity : AppCompatActivity() {
         val swC = findViewById<Switch>(R.id.es_cliente)
         val swN = findViewById<Switch>(R.id.es_negocio)
         val swPW = findViewById<Switch>(R.id.olvido_pwd)
+        val swNR = findViewById<Switch>(R.id.sw_nuevo_enlared)
 
         swC?.setOnClickListener {
             if (swC.isChecked) {
@@ -131,6 +132,30 @@ class MainActivity : AppCompatActivity() {
                 swN.isEnabled = (true)
                 swN.isChecked = (false)
                 swC.isChecked = (false)
+            }
+
+        }
+
+        swNR?.setOnClickListener {
+            if (swNR.isChecked) {
+                registroNuevoNegocio.isEnabled = (true)
+                registroNuevoCliente.isEnabled = (true)
+                registroNuevoNegocio.visibility = (View.VISIBLE)
+                registroNuevoCliente.visibility = (View.VISIBLE)
+                usoAppCliente.isEnabled = (false)
+                usoAppNegocio.isEnabled = (false)
+                swN.isChecked = (false)
+                swC.isChecked = (false)
+                swC.isEnabled = (false)
+                swN.isEnabled = (false)
+                swPW.isEnabled = (false)
+                swPW.isChecked = (false)
+            }  else {
+                swC.isEnabled = (true)
+                swN.isEnabled = (true)
+                swPW.isEnabled = (true)
+                registroNuevoNegocio.visibility = (View.GONE)
+                registroNuevoCliente.visibility = (View.GONE)
             }
 
         }
