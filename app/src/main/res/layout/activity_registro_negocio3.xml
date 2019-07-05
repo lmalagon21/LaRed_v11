@@ -14,7 +14,8 @@
             android:textColor="#009688" android:textColorHighlight="#E91E63"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="21dp" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
-            android:layout_marginBottom="53dp" app:layout_constraintBottom_toTopOf="@+id/acercade2"/>
+            android:layout_marginBottom="53dp" app:layout_constraintBottom_toTopOf="@+id/acercade2"
+            android:visibility="invisible"/>
     <TextView
             android:text="@string/cu_ntanos_acerca_de_la_ubicaci_n_de_tu_negocio"
             android:layout_width="wrap_content"
