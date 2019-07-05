@@ -81,7 +81,6 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
-
         }
 
         val swC = findViewById<Switch>(R.id.es_cliente)
@@ -121,10 +120,12 @@ class MainActivity : AppCompatActivity() {
             if (swPW.isChecked) {
                 swC.isEnabled = (false)
                 swN.isEnabled = (false)
+                swNR.isEnabled = (false)
                 usoAppCliente.isEnabled = (false)
                 usoAppNegocio.isEnabled = (false)
                 swN.isChecked = (false)
                 swC.isChecked = (false)
+                swNR.isChecked = (false)
                 val intent = Intent(this, olvido_password :: class.java)
                 startActivity(intent)
             }  else {
@@ -132,6 +133,8 @@ class MainActivity : AppCompatActivity() {
                 swN.isEnabled = (true)
                 swN.isChecked = (false)
                 swC.isChecked = (false)
+                swNR.isEnabled = (true)
+                swNR.isChecked = (false)
             }
 
         }

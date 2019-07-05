@@ -6,6 +6,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.Switch
+import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_olvido_password.*
 
 class olvido_password : AppCompatActivity() {
 
@@ -88,13 +91,91 @@ class olvido_password : AppCompatActivity() {
         }
 
         recuperar_pwd_cliente.setOnClickListener {
-            val intent = Intent(this, ingresar_nuevopwd_cliente :: class.java)
-            startActivity(intent)
+            val movil_cliente = this.recuperarpwd_movil_cliente.getText().toString()
+            val pregunta1_cliente = this.recuperarpwd_pregunta1_cliente.getText().toString()
+            val respuesta1_cliente = this.recuperarpwd_respuesta1_cliente.getText().toString()
+            val pregunta2_cliente = this.recuperarpwd_pregunta2_cliente.getText().toString()
+            val respuesta2_cliente = this.recuperarpwd_respuesta2_cliente.getText().toString()
+            if (movil_cliente.equals("")) {
+                Toast.makeText(
+                    this, "Debe ingresar el número móvil",
+                    Toast.LENGTH_LONG
+                ).show();
+            } else {
+                if (pregunta1_cliente.equals("")) {
+                    Toast.makeText(
+                        this, "Escoja la pregunta 1",
+                        Toast.LENGTH_LONG
+                    ).show();
+                } else {
+                    if (respuesta1_cliente.equals("")) {
+                        Toast.makeText(
+                            this, "Debe ingresar la respuesta 1",
+                            Toast.LENGTH_LONG
+                        ).show();
+                    } else {
+                        if (pregunta2_cliente.equals("")) {
+                            Toast.makeText(
+                                this, "Escoja la pregunta 2",
+                                Toast.LENGTH_LONG
+                            ).show();
+                        } else {
+                            if (respuesta2_cliente.equals("")) {
+                                Toast.makeText(
+                                    this, "Debe ingresar la respuesta 2",
+                                    Toast.LENGTH_LONG
+                                ).show();
+                            } else {
+                                val intent = Intent(this, ingresar_nuevopwd_cliente::class.java)
+                                startActivity(intent)
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         recuperar_pwd_negocio.setOnClickListener {
-            val intent = Intent(this, ingresar_nuevopwd_negocio :: class.java)
-            startActivity(intent)
+            val movil_negocio = this.recuperarpwd_movil_negocio.getText().toString()
+            val pregunta1_negocio = this.recuperarpwd_pregunta1_negocio.getText().toString()
+            val respuesta1_negocio = this.recuperarpwd_respuesta1_negocio.getText().toString()
+            val pregunta2_negocio = this.recuperarpwd_pregunta2_negocio.getText().toString()
+            val respuesta2_negocio = this.recuperarpwd_respuesta2_negocio.getText().toString()
+            if (movil_negocio.equals("")) {
+                Toast.makeText(this, "Debe ingresar el número móvil",
+                    Toast.LENGTH_LONG).show();
+            } else {
+                if (pregunta1_negocio.equals("")) {
+                    Toast.makeText(
+                        this, "Escoja la pregunta 1",
+                        Toast.LENGTH_LONG
+                    ).show();
+                } else {
+                    if (respuesta1_negocio.equals("")) {
+                        Toast.makeText(
+                            this, "Debe ingresar la respuesta 1",
+                            Toast.LENGTH_LONG
+                        ).show();
+                    } else {
+                        if (pregunta2_negocio.equals("")) {
+                            Toast.makeText(
+                                this, "Escoja la pregunta 2",
+                                Toast.LENGTH_LONG
+                            ).show();
+                        } else {
+                            if (respuesta2_negocio.equals("")) {
+                                Toast.makeText(
+                                    this, "Debe ingresar la respuesta 2",
+                                    Toast.LENGTH_LONG
+                                ).show();
+                            } else {
+                                val intent = Intent(this, ingresar_nuevopwd_negocio::class.java)
+                                startActivity(intent)
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
