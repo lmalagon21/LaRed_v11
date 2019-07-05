@@ -92,9 +92,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/cont_regnegocio2" android:background="#FBFBFB"
-            android:textColor="#009688" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="17dp"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            android:textColor="#FF9800" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="16dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.95"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

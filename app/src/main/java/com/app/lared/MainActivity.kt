@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.EditText
 import android.widget.Switch
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
@@ -30,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         val usoAppNegocio : Button = findViewById(R.id.entrar_red_negocio)
         usoAppNegocio.setOnClickListener {
-            val movil = this.movil.getText().toString()
+            val movil = this.movil_negocio.getText().toString()
             val password = this.password.getText().toString()
             if (movil.equals("")) {
                 Toast.makeText(this, "Debe ingresar el número móvil",
@@ -58,7 +57,7 @@ class MainActivity : AppCompatActivity() {
 
         val usoAppCliente : Button = findViewById(R.id.entrar_red_cliente)
         usoAppCliente.setOnClickListener {
-            val movil = this.movil.getText().toString()
+            val movil = this.movil_negocio.getText().toString()
             val password = this.password.getText().toString()
             if (movil.equals("")) {
                 Toast.makeText(this, "Debe ingresar el número móvil",

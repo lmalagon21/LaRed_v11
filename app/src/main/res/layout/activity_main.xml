@@ -34,13 +34,13 @@
             android:clickable="false" android:background="#FBFBFB"
             android:textColor="#009688"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/movil"/>
+            app:layout_constraintBottom_toTopOf="@+id/movil_negocio"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="phone"
             android:ems="10"
-            android:id="@+id/movil"
+            android:id="@+id/movil_negocio"
             android:maxLength="10"
             android:textColor="#3F51B5"
             android:shadowColor="#F44336" android:gravity="center"

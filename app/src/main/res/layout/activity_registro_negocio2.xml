@@ -11,7 +11,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/acercade" android:textColor="#009688"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginBottom="43dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginBottom="40dp"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/tipo_docnegocio"/>
     <TextView
             android:layout_width="wrap_content"
@@ -20,28 +20,30 @@
             android:id="@+id/estas_enred"
             android:textColor="#009688" android:textColorHighlight="#E91E63"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="8dp" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
+            android:layout_marginTop="8dp" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+            android:visibility="invisible"/>
     <Button
             android:text="Continuar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/continuar_reg_neg2" android:background="#FBFBFB"
-            android:textColor="#009688"
+            android:textColor="#FF9800"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="16dp" app:layout_constraintEnd_toEndOf="parent"/>
+            android:layout_marginBottom="16dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"/>
     <TextView
             android:text="Tipo de Documento"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tipo_docnegocio" android:textColor="#009688"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="16dp" android:layout_marginTop="136dp" android:layout_marginStart="16dp"/>
+            android:layout_marginLeft="16dp" android:layout_marginTop="88dp" android:layout_marginStart="16dp"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
-            android:id="@+id/nit"
+            android:id="@+id/tipo_documento"
             android:maxLength="10" android:textColor="#009688"
             app:layout_constraintTop_toTopOf="@+id/tipo_docnegocio"
             app:layout_constraintStart_toStartOf="@+id/tipo_docnegocio" android:layout_marginTop="16dp"/>
@@ -58,7 +60,7 @@
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
-            android:id="@+id/movil"
+            android:id="@+id/movil_negocio"
             android:maxLength="10" android:textColor="#009688"
             app:layout_constraintStart_toStartOf="@+id/label_movil"
             app:layout_constraintTop_toBottomOf="@+id/label_movil"/>
@@ -69,13 +71,13 @@
             android:id="@+id/label_email" android:textColor="#009688"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="8dp"
             android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/movil"/>
+            app:layout_constraintTop_toBottomOf="@+id/movil_negocio"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:ems="10"
-            android:id="@+id/email"
+            android:id="@+id/email_negocio"
             android:textColor="#009688"
             app:layout_constraintStart_toStartOf="@+id/label_email"
             app:layout_constraintTop_toBottomOf="@+id/label_email"/>
@@ -94,7 +96,7 @@
             android:id="@+id/label_pwd_negocio" android:textColor="#009688"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="23dp"
             android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/email"/>
+            app:layout_constraintTop_toBottomOf="@+id/email_negocio"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -111,6 +113,22 @@
             android:id="@+id/label_numdocnegocio" android:textColor="#009688"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="20dp"
             android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/nit"/>
+            app:layout_constraintTop_toBottomOf="@+id/tipo_documento"/>
+    <TextView
+            android:text="Repetir Contraseña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_repetirpwd_negocio"
+            android:textColor="#009688" app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/pwd_negocio"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/repetirpwd_negocio" android:maxLength="15" android:textColor="#009688"
+            app:layout_constraintStart_toStartOf="@+id/label_repetirpwd_negocio"
+            app:layout_constraintTop_toBottomOf="@+id/label_repetirpwd_negocio"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
