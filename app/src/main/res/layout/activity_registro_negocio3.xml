@@ -40,13 +40,13 @@
             android:id="@+id/label_pais" android:textColor="#009688"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/pais" android:layout_marginBottom="4dp"/>
+            app:layout_constraintBottom_toTopOf="@+id/pais_negocio" android:layout_marginBottom="4dp"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="number"
+            android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/pais"
+            android:id="@+id/pais_negocio"
             android:maxLength="10" android:textColor="#009688"
             app:layout_constraintStart_toStartOf="@+id/label_pais"
             app:layout_constraintTop_toTopOf="parent"
@@ -57,15 +57,15 @@
             android:layout_height="32dp"
             android:id="@+id/label_ciudad" android:textColor="#009688"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/pais"
+            app:layout_constraintTop_toBottomOf="@+id/pais_negocio"
             android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp" android:layout_marginTop="36dp"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="number"
+            android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/ciudad"
+            android:id="@+id/ciudad_negocio"
             android:maxLength="10" android:textColor="#009688"
             app:layout_constraintStart_toStartOf="@+id/label_ciudad"
             app:layout_constraintTop_toBottomOf="@+id/label_ciudad"
@@ -77,13 +77,13 @@
             android:id="@+id/label_barrio" android:textColor="#009688"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/ciudad" android:layout_marginTop="16dp"/>
+            app:layout_constraintTop_toBottomOf="@+id/ciudad_negocio" android:layout_marginTop="16dp"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/barrio"
+            android:id="@+id/barrio_negocio"
             android:textColor="#009688" app:layout_constraintStart_toStartOf="@+id/label_barrio"
             app:layout_constraintTop_toBottomOf="@+id/label_barrio"
     />
@@ -94,13 +94,13 @@
             android:id="@+id/label_direccion" android:textColor="#009688"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="16dp"
             android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/barrio"/>
+            app:layout_constraintTop_toBottomOf="@+id/barrio_negocio"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/direccion"
+            android:id="@+id/direccion_negocio"
             android:textColor="#009688" app:layout_constraintStart_toStartOf="@+id/label_direccion"
             app:layout_constraintTop_toBottomOf="@+id/label_direccion"/>
     <TextView
@@ -110,11 +110,11 @@
             android:id="@+id/label_foto" android:textColor="#009688"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="26dp"
             android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/direccion"/>
+            app:layout_constraintTop_toBottomOf="@+id/direccion_negocio"/>
     <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" tools:srcCompat="@tools:sample/backgrounds/scenic"
-            android:id="@+id/imageButton"
+            android:id="@+id/foto_negocio"
             app:layout_constraintStart_toStartOf="@+id/label_foto"
             app:layout_constraintTop_toBottomOf="@+id/label_foto"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
