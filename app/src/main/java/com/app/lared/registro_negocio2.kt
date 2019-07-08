@@ -57,7 +57,7 @@ class registro_negocio2 : AppCompatActivity() {
                                     ).show();
                                 } else {
                                     if (pwd_negocio.equals(repetirpwd_negocio)) {
-                                        val intent = Intent(this, registro_negocio1::class.java)
+                                        val intent = Intent(this, registro_negocio1 :: class.java)
                                         startActivity(intent)
                                     } else {
                                         Toast.makeText(

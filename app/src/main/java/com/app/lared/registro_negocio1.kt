@@ -42,7 +42,7 @@ class registro_negocio1 : AppCompatActivity() {
                                 Toast.LENGTH_LONG
                             ).show();
                         } else {
-                            val intent = Intent(this, registro_negocio3::class.java)
+                            val intent = Intent(this, registro_negocio3 :: class.java)
                             startActivity(intent)
                         }
                     }

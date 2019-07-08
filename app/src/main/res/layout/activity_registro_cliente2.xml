@@ -14,7 +14,8 @@
             android:textColor="#009688" android:textColorHighlight="#E91E63"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="16dp" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
-            android:layout_marginBottom="56dp" app:layout_constraintBottom_toTopOf="@+id/labelconocercliente1"/>
+            android:layout_marginBottom="56dp" app:layout_constraintBottom_toTopOf="@+id/labelconocercliente1"
+            android:visibility="invisible"/>
     <TextView
             android:text="Donde estás ubicado?"
             android:layout_width="149dp"
@@ -24,14 +25,14 @@
             android:textColor="#009688"
             app:layout_constraintTop_toBottomOf="@+id/estas_enred"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="64dp"/>
+            android:layout_marginTop="36dp"/>
     <TextView
             android:text="País"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="56dp"
+            android:layout_height="20dp"
             android:id="@+id/label_paiscliente" android:textColor="#009688"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="16dp" android:layout_marginTop="180dp" android:layout_marginStart="16dp"/>
+            android:layout_marginLeft="16dp" android:layout_marginTop="144dp" android:layout_marginStart="16dp"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -45,7 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/label_ciudadcliente" android:textColor="#009688"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="20dp"
             android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
             app:layout_constraintTop_toBottomOf="@+id/pais_cliente"/>
     <EditText
@@ -59,9 +60,9 @@
     <TextView
             android:text="Barrio de Preferencia"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="22dp"
             android:id="@+id/label_barriocliente" android:textColor="#009688"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="31dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="20dp"
             android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
             app:layout_constraintTop_toBottomOf="@+id/ciudad_cliente"/>
     <EditText
@@ -78,7 +79,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/recibir_notificacionescliente"
             android:textColor="#009688" android:textColorHighlight="#FFEB3B"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="27dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="56dp"
             android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
             app:layout_constraintTop_toBottomOf="@+id/barrio_cliente"/>
     <Button
@@ -87,7 +88,15 @@
             android:layout_height="wrap_content"
             android:id="@+id/registrar_cliente" android:textColor="#009688"
             android:background="#FBFBFB" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="17dp"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="16dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.95"/>
+    <Button
+            android:text="Atrás"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/atras_finalcliente" android:background="#FBFBFB"
+            android:textColor="#F44336" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,7 @@
             android:text="@string/bienvenido_a_lared"
             android:id="@+id/estas_enred"
             android:textColor="#009688" android:textColorHighlight="#E91E63"
+            android:visibility="invisible"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="16dp" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
     <TextView
@@ -21,23 +22,27 @@
             android:id="@+id/labelconocercliente1"
             android:clickable="false" android:background="#FBFBFB"
             android:textColor="#009688"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="48dp"
-            app:layout_constraintTop_toBottomOf="@+id/estas_enred" app:layout_constraintEnd_toEndOf="parent"/>
+            android:layout_marginTop="46dp"
+            android:layout_marginBottom="48dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/labelprimernombre" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
     <TextView
             android:text="Primer Nombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/labelprimernombre" android:textColor="#009688"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="16dp" android:layout_marginTop="154dp" android:layout_marginStart="16dp"/>
+            android:layout_marginLeft="16dp" android:layout_marginTop="92dp" android:layout_marginStart="16dp"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/primernombre"
-            android:textColor="#009688" app:layout_constraintStart_toStartOf="@+id/labelprimernombre"
-            app:layout_constraintTop_toBottomOf="@+id/labelprimernombre" android:maxLength="15"/>
+            android:id="@+id/primernombre_cliente"
+            android:textColor="#009688"
+            android:maxLength="15"
+            app:layout_constraintStart_toStartOf="@+id/labelprimernombre"
+            app:layout_constraintTop_toBottomOf="@+id/labelprimernombre"/>
     <TextView
             android:text="Segundo Nombre"
             android:layout_width="wrap_content"
@@ -45,15 +50,17 @@
             android:id="@+id/label_segundonombre" android:textColor="#009688"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="28dp"
             android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/primernombre"/>
+            app:layout_constraintTop_toBottomOf="@+id/primernombre_cliente"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/segundonombre"
-            android:textColor="#009688" app:layout_constraintStart_toStartOf="@+id/label_segundonombre"
-            app:layout_constraintTop_toBottomOf="@+id/label_segundonombre" android:maxLength="15"/>
+            android:id="@+id/segundonombre_cliente"
+            android:textColor="#009688"
+            android:maxLength="15"
+            app:layout_constraintStart_toStartOf="@+id/label_segundonombre"
+            app:layout_constraintTop_toBottomOf="@+id/label_segundonombre"/>
     <TextView
             android:text="Primer Apellido"
             android:layout_width="wrap_content"
@@ -61,37 +68,67 @@
             android:id="@+id/label_primerapellido" android:textColor="#009688"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="24dp"
             android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/segundonombre"/>
+            app:layout_constraintTop_toBottomOf="@+id/segundonombre_cliente"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/primerapellido"
+            android:id="@+id/primerapellido_cliente"
+            android:textColor="#009688"
+            android:maxLength="10"
             app:layout_constraintStart_toStartOf="@+id/label_primerapellido"
-            app:layout_constraintTop_toBottomOf="@+id/label_primerapellido" android:textColor="#009688"
-            android:maxLength="10"/>
+            app:layout_constraintTop_toBottomOf="@+id/label_primerapellido"/>
     <TextView
             android:text="Segundo Apellido"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/label_segundoapellido" android:textColor="#009688"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="17dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="18dp"
             android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/primerapellido"/>
+            app:layout_constraintTop_toBottomOf="@+id/primerapellido_cliente"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/segundoapellido" app:layout_constraintStart_toStartOf="@+id/label_segundoapellido"
-            app:layout_constraintTop_toBottomOf="@+id/label_segundoapellido" android:maxLength="10"/>
+            android:id="@+id/segundoapellido_cliente"
+            android:maxLength="10"
+            app:layout_constraintStart_toStartOf="@+id/label_segundoapellido"
+            app:layout_constraintTop_toBottomOf="@+id/label_segundoapellido" android:textColor="#009688"/>
     <Button
             android:text="Continuar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/continuar_regcliente" android:background="#FBFBFB"
-            android:textColor="#009688" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="17dp"
+            android:textColor="#009688"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp" android:layout_marginBottom="16dp"
             app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="Cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelar_registrocliente1"
+            android:background="#FBFBFB" android:textColor="#F44336"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="16dp"
+            android:layout_marginBottom="17dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/movil_cliente"
+            android:maxLength="10"
+            app:layout_constraintStart_toStartOf="@+id/label_movilcliente"
+            app:layout_constraintTop_toBottomOf="@+id/label_movilcliente" android:textColor="#FF5722"/>
+    <TextView
+            android:text="Número Móvil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/label_movilcliente" android:textColor="#009688"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="14dp"
+            android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/segundoapellido_cliente"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
