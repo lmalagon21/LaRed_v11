@@ -73,6 +73,7 @@
         <item>Escoja su tipo de documento</item>
         <item>Cédula</item>
         <item>Cédula de extranjería</item>
+        <item>Pasaporte</item>
     </string-array>
     <string-array name="pais_negocio">
         <item>Escoja el país de ubicación de su negocio</item>

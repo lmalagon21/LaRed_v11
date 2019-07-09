@@ -22,12 +22,12 @@ class registro_cliente1 : AppCompatActivity() {
 
         val cont_regcliente1 : Button = findViewById(R.id.cont_regcliente1)
         cont_regcliente1.setOnClickListener {
-            val tipo_doccliente = this.tipo_doccliente.getText().toString()
+            val tipo_doccliente = this.tipo_doc_cliente.getSelectedItem().toString()
             val numdoccliente = this.numdoccliente.getText().toString()
             val email_cliente = this.email_cliente.getText().toString()
             val pwd_cliente = this.pwd_cliente.getText().toString()
             val repetirpwd_cliente = this.repetirpwd_cliente.getText().toString()
-            if (tipo_doccliente.equals("")) {
+            if (tipo_doccliente.equals("Escoja su tipo de documento")) {
                 Toast.makeText(this, "Debe escoger el tipo de documento",
                     Toast.LENGTH_LONG).show();
             } else {
