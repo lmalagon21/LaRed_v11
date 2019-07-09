@@ -12,9 +12,9 @@
             android:text="@string/bienvenido_a_lared"
             android:id="@+id/estas_enred"
             android:textColor="#009688" android:textColorHighlight="#E91E63"
+            android:visibility="invisible"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="16dp" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
-            android:visibility="invisible"/>
+            android:layout_marginTop="16dp" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
     <TextView
             android:text="Vamos a crear la nueva contraseña"
             android:layout_width="wrap_content"
@@ -31,10 +31,10 @@
             android:id="@+id/label_movil_newpwd_negocio"
             android:textColor="#009688"
             android:gravity="center"
-            app:layout_constraintEnd_toEndOf="@+id/newpwd_negocio1"
+            app:layout_constraintEnd_toEndOf="@+id/movil_newpwd_negocio"
             app:layout_constraintBottom_toTopOf="@+id/movil_newpwd_negocio"
-            app:layout_constraintStart_toStartOf="@+id/label_newpwd_digitar" android:layout_marginLeft="64dp"
-            android:layout_marginStart="64dp" android:layout_marginEnd="64dp" android:layout_marginRight="64dp"/>
+            app:layout_constraintStart_toStartOf="@+id/label_newpwd_digitar" android:layout_marginLeft="65dp"
+            android:layout_marginStart="65dp" android:layout_marginEnd="65dp" android:layout_marginRight="65dp"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -42,8 +42,9 @@
             android:ems="10"
             android:id="@+id/movil_newpwd_negocio" android:gravity="center" android:textColor="#9C27B0"
             android:maxLength="10"
-            app:layout_constraintStart_toStartOf="@+id/newpwd_negocio1" android:layout_marginLeft="1dp"
-            android:layout_marginStart="1dp" android:layout_marginBottom="29dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp" android:layout_marginBottom="29dp"
+            app:layout_constraintEnd_toEndOf="@+id/label_newpwd_digitar"
             app:layout_constraintBottom_toTopOf="@+id/label_newpwd_negocio1"/>
     <TextView
             android:text="Digite su nueva contraseña"
@@ -60,8 +61,10 @@
             android:ems="10"
             android:id="@+id/newpwd_negocio1"
             android:textColor="#9C27B0"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="256dp" app:layout_constraintEnd_toEndOf="parent" android:gravity="center"/>
+            android:gravity="center"
+            android:layout_marginEnd="1dp" android:layout_marginRight="1dp" android:layout_marginBottom="29dp"
+            app:layout_constraintEnd_toEndOf="@+id/movil_newpwd_negocio"
+            app:layout_constraintBottom_toTopOf="@+id/label_newpwd_negocio2"/>
     <TextView
             android:text="Repita la nueva contraseña"
             android:layout_width="wrap_content"
@@ -76,25 +79,28 @@
             android:ems="10"
             android:id="@+id/newpwd_negocio2"
             android:textColor="#9C27B0" android:gravity="center"
-            app:layout_constraintStart_toStartOf="@+id/newpwd_negocio1" android:layout_marginTop="48dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="@+id/newpwd_negocio1"
             android:layout_marginLeft="1dp" android:layout_marginStart="1dp"
-            app:layout_constraintTop_toBottomOf="@+id/newpwd_negocio1"/>
+            app:layout_constraintBottom_toBottomOf="parent"/>
     <Button
             android:text="Confirmar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/cambiar_newpwd_negocio"
             android:background="#FBFBFB" android:textColor="#9C27B0"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="16dp" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.049" android:gravity="center"/>
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp" android:layout_marginBottom="16dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
     <Button
             android:text="Cancelar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/cancelar_newpwd1" android:background="#FBFBFB"
-            android:textColor="#F44336" app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="28dp"
-            android:layout_marginRight="28dp" android:layout_marginBottom="16dp"
-            app:layout_constraintEnd_toEndOf="parent" android:gravity="center"/>
+            android:textColor="#F44336"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
