@@ -37,46 +37,25 @@
             android:layout_width="50dp"
             android:layout_height="17dp"
             android:id="@+id/label_pais" android:textColor="#009688"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="45dp"
-            android:layout_marginLeft="16dp" app:layout_constraintBottom_toBottomOf="@+id/pais_negocio"
-            android:layout_marginStart="16dp" app:layout_constraintTop_toBottomOf="@+id/acercade2"
-            android:layout_marginBottom="44dp"/>
-    <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/pais_negocio"
-            android:maxLength="10" android:textColor="#009688"
-            app:layout_constraintStart_toStartOf="@+id/label_pais" android:layout_marginBottom="19dp"
+            app:layout_constraintTop_toTopOf="@+id/acercade2" app:layout_constraintStart_toStartOf="@+id/pais_negocio"
+            android:layout_marginTop="64dp" android:layout_marginBottom="63dp"
             app:layout_constraintBottom_toTopOf="@+id/label_ciudad"/>
     <TextView
             android:text="@string/ciudad"
             android:layout_width="87dp"
             android:layout_height="26dp"
             android:id="@+id/label_ciudad" android:textColor="#009688"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="189dp" android:layout_marginLeft="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/label_direccion" android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="@+id/ciudad_negocio"
+            android:layout_marginTop="189dp" app:layout_constraintBottom_toBottomOf="@+id/label_direccion"
             android:layout_marginBottom="189dp"/>
-    <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/ciudad_negocio"
-            android:maxLength="10" android:textColor="#009688"
-            app:layout_constraintStart_toStartOf="@+id/label_ciudad"
-            app:layout_constraintTop_toBottomOf="@+id/label_ciudad"/>
     <TextView
             android:text="@string/barrio"
             android:layout_width="114dp"
             android:layout_height="34dp"
             android:id="@+id/label_barrio" android:textColor="#009688"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="156dp"
-            android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/label_pais" android:layout_marginBottom="156dp"
-            app:layout_constraintBottom_toTopOf="@+id/label_foto"/>
+            app:layout_constraintTop_toTopOf="@+id/pais_negocio" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="156dp" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+            android:layout_marginBottom="156dp" app:layout_constraintBottom_toTopOf="@+id/label_foto"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -125,4 +104,23 @@
             android:background="#FBFBFB" android:textColor="#F44336"
             app:layout_constraintStart_toStartOf="@+id/foto_negocio" app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="16dp"/>
+    <Spinner
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:id="@+id/pais_negocio"
+            android:entries="@array/pais_negocio"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="26dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/label_ciudad" app:layout_constraintTop_toTopOf="@+id/label_pais"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:layout_marginRight="16dp"/>
+    <Spinner
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:id="@+id/ciudad_negocio" android:layout_marginTop="26dp"
+            android:layout_marginBottom="32dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/label_barrio" app:layout_constraintTop_toTopOf="@+id/label_ciudad"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:layout_marginRight="16dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

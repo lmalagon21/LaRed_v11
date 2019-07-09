@@ -33,17 +33,85 @@
     <string-array name="tipo_negocio">
         <item>Escoja su tipo de negocio</item>
         <item>Almacén</item>
+        <item>Bar</item>
+        <item>Barbería</item>
         <item>Cacharrería</item>
         <item>Cafetería</item>
+        <item>Carpintería</item>
+        <item>Cerrajería</item>
+        <item>Comidas Rápidas</item>
         <item>Charcutería</item>
         <item>Droguería</item>
-        <item>Licorería</item>
+        <item>Fruteria</item>
+        <item>Heladería</item>
+        <item>Juguetería</item>
+        <item>Lavandería</item>
+        <item>Librería</item>
+        <item>Licorera</item>
+        <item>Marquetería</item>
         <item>MiniMercado</item>
+        <item>Modistería</item>
+        <item>Mueblería</item>
         <item>Panadería</item>
         <item>Papelería</item>
         <item>Peluquería</item>
         <item>Restaurante</item>
+        <item>Restaurante-Bar</item>
+        <item>Textilería</item>
+        <item>Taller</item>
         <item>Tienda</item>
+        <item>Spa</item>
         <item>Supermercado</item>
+        <item>Vidriería</item>
+    </string-array>
+    <string-array name="tipo_documento_negocio">
+        <item>Escoja su tipo de documento</item>
+        <item>Nit</item>
+        <item>Cédula</item>
+    </string-array>
+    <string-array name="tipo_documento_cliente">
+        <item>Escoja su tipo de documento</item>
+        <item>Cédula</item>
+        <item>Cédula de extranjería</item>
+    </string-array>
+    <string-array name="pais_negocio">
+        <item>Escoja el país de ubicación de su negocio</item>
+        <item>Colombia</item>
+        <item>Antigua y Barbuda</item>
+        <item>Argentina</item>
+        <item>Bahamas</item>
+        <item>Barbados</item>
+        <item>Belice</item>
+        <item>Bolivia</item>
+        <item>Brasil</item>
+        <item>Canadá</item>
+        <item>Chile</item>
+        <item>Costa Rica</item>
+        <item>Cuba</item>
+        <item>Dominica</item>
+        <item>Ecuador</item>
+        <item>El Salvador</item>
+        <item>EEUU</item>
+        <item>Grenada</item>
+        <item>Guatemala</item>
+        <item>Guayana Francesa</item>
+        <item>Guyana</item>
+        <item>Haití</item>
+        <item>Honduras</item>
+        <item>Jamaica</item>
+        <item>México</item>
+        <item>Nicaragua</item>
+        <item>Panamá</item>
+        <item>Paraguay</item>
+        <item>Perú</item>
+        <item>Puerto Rico</item>
+        <item>República Dominicana</item>
+        <item>San Cristóbal y Nevis</item>
+        <item>San Vicente y Granadinas</item>
+        <item>Santa Lucía</item>
+        <item>Surinam</item>
+        <item>Trinidad y Tobago</item>
+        <item>Uruguay</item>
+        <item>Venezuela</item>
     </string-array>
 </resources>

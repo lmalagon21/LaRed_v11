@@ -14,6 +14,12 @@ class registro_negocio1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro_negocio1)
 
+        val atras_registronegocio1 : Button = findViewById(R.id.atras_registronegocio1)
+        atras_registronegocio1.setOnClickListener{
+            val intent = Intent(this, registro_negocio2 :: class.java)
+            startActivity(intent)
+        }
+
         val registroNuevoNegocio : Button = findViewById(R.id.cont_regnegocio2)
         registroNuevoNegocio.setOnClickListener {
             val pregunta1_negocio = this.pregunta1_negocio.getText().toString()

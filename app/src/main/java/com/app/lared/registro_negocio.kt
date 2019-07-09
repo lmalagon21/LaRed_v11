@@ -17,6 +17,13 @@ class registro_negocio : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro_negocio)
 
+
+        val cancelar_registronegocio: Button = findViewById(R.id.cancelar_registronegocio)
+        cancelar_registronegocio.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
         val registroNuevoNegocio: Button = findViewById(R.id.continuar_reg_neg2)
         registroNuevoNegocio.setOnClickListener {
             val nombre_negocio = this.nombrenegocio.getText().toString()

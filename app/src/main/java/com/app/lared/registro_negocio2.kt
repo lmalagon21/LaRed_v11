@@ -14,15 +14,21 @@ class registro_negocio2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro_negocio2)
 
+        val atras_registronegocio : Button = findViewById(R.id.atras_registronegocio)
+        atras_registronegocio.setOnClickListener{
+            val intent = Intent(this, registro_negocio :: class.java)
+            startActivity(intent)
+        }
+
         val registroNuevoNegocio : Button = findViewById(R.id.continuar_reg_neg2)
         registroNuevoNegocio.setOnClickListener {
-            val tipo_documento = this.tipo_documento.getText().toString()
+            val tipo_documentonegocio = this.tipo_documentonegocio.getSelectedItem().toString()
             val numerodocnegocio = this.numerodocnegocio.getText().toString()
             val movil_negocio = this.movil_negocio.getText().toString()
             val email_negocio = this.email_negocio.getText().toString()
             val pwd_negocio = this.pwd_negocio.getText().toString()
             val repetirpwd_negocio = this.repetirpwd_negocio.getText().toString()
-            if (tipo_documento.equals("")) {
+            if (tipo_documentonegocio.equals("Escoja su tipo de documento")) {
                 Toast.makeText(this, "Debe escoger el tipo de documento",
                     Toast.LENGTH_LONG).show();
             } else {

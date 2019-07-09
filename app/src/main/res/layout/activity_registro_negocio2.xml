@@ -37,18 +37,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tipo_docnegocio" android:textColor="#009688"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="16dp"
-            android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/acercade"/>
-    <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/tipo_documento"
-            android:maxLength="10" android:textColor="#009688"
-            app:layout_constraintStart_toStartOf="@+id/tipo_docnegocio"
-            app:layout_constraintTop_toBottomOf="@+id/tipo_docnegocio"/>
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" app:layout_constraintBottom_toTopOf="@+id/tipo_documentonegocio"/>
     <TextView
             android:text="Número Móvil"
             android:layout_width="wrap_content"
@@ -114,9 +104,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/label_numdocnegocio" android:textColor="#009688"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="17dp"
-            android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/tipo_documento"/>
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="16dp" android:layout_marginTop="132dp" android:layout_marginStart="16dp"/>
     <TextView
             android:text="Repetir Contraseña"
             android:layout_width="wrap_content"
@@ -143,5 +132,14 @@
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="16dp"
             android:layout_marginBottom="16dp"/>
+    <Spinner
+            android:layout_width="275dp"
+            android:layout_height="33dp"
+            android:id="@+id/tipo_documentonegocio"
+            app:layout_constraintStart_toStartOf="@+id/tipo_docnegocio" android:layout_marginTop="45dp"
+            app:layout_constraintBottom_toBottomOf="@+id/label_numdocnegocio"
+            app:layout_constraintTop_toBottomOf="@+id/estas_enred" android:layout_marginBottom="44dp"
+            android:entries="@array/tipo_documento_negocio"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
