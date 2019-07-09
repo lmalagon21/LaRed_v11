@@ -30,4 +30,20 @@
     <string name="contrase_a_cli">Contraseña</string>
     <string name="n_mero_de_documento_cli">Número de Documento</string>
     <string name="continuar_regcli1">Continuar</string>
+    <string-array name="tipo_negocio">
+        <item>Escoja su tipo de negocio</item>
+        <item>Almacén</item>
+        <item>Cacharrería</item>
+        <item>Cafetería</item>
+        <item>Charcutería</item>
+        <item>Droguería</item>
+        <item>Licorería</item>
+        <item>MiniMercado</item>
+        <item>Panadería</item>
+        <item>Papelería</item>
+        <item>Peluquería</item>
+        <item>Restaurante</item>
+        <item>Tienda</item>
+        <item>Supermercado</item>
+    </string-array>
 </resources>
