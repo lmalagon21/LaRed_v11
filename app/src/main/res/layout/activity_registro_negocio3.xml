@@ -12,35 +12,35 @@
             android:text="@string/bienvenido_a_lared"
             android:id="@+id/estas_enred"
             android:textColor="#009688" android:textColorHighlight="#E91E63"
+            android:visibility="invisible"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="21dp" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
-            android:layout_marginBottom="53dp" app:layout_constraintBottom_toTopOf="@+id/acercade2"
-            android:visibility="invisible"/>
+            android:layout_marginTop="14dp" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
     <TextView
             android:text="@string/cu_ntanos_acerca_de_la_ubicaci_n_de_tu_negocio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/acercade2" android:textColor="#009688"
-            app:layout_constraintTop_toBottomOf="@+id/estas_enred" android:layout_marginBottom="36dp"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/label_pais"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.495"/>
+            app:layout_constraintStart_toStartOf="@+id/estas_enred" android:layout_marginTop="12dp"
+            android:layout_marginLeft="36dp" android:layout_marginStart="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/estas_enred"/>
     <Button
             android:text="@string/registrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/registrar_neg" android:background="#FBFBFB"
             android:textColor="#FF9800"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="16dp" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.95"/>
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp" android:layout_marginBottom="16dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
     <TextView
             android:text="@string/pa_s"
-            android:layout_width="wrap_content"
-            android:layout_height="15dp"
+            android:layout_width="50dp"
+            android:layout_height="17dp"
             android:id="@+id/label_pais" android:textColor="#009688"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
-            android:layout_marginStart="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/pais_negocio" android:layout_marginBottom="4dp"/>
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="45dp"
+            android:layout_marginLeft="16dp" app:layout_constraintBottom_toBottomOf="@+id/pais_negocio"
+            android:layout_marginStart="16dp" app:layout_constraintTop_toBottomOf="@+id/acercade2"
+            android:layout_marginBottom="44dp"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,18 +48,17 @@
             android:ems="10"
             android:id="@+id/pais_negocio"
             android:maxLength="10" android:textColor="#009688"
-            app:layout_constraintStart_toStartOf="@+id/label_pais"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="148dp"/>
+            app:layout_constraintStart_toStartOf="@+id/label_pais" android:layout_marginBottom="19dp"
+            app:layout_constraintBottom_toTopOf="@+id/label_ciudad"/>
     <TextView
             android:text="@string/ciudad"
-            android:layout_width="167dp"
-            android:layout_height="32dp"
+            android:layout_width="87dp"
+            android:layout_height="26dp"
             android:id="@+id/label_ciudad" android:textColor="#009688"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/pais_negocio"
-            android:layout_marginLeft="16dp"
-            android:layout_marginStart="16dp" android:layout_marginTop="36dp"/>
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="189dp" android:layout_marginLeft="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/label_direccion" android:layout_marginStart="16dp"
+            android:layout_marginBottom="189dp"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -68,31 +67,31 @@
             android:id="@+id/ciudad_negocio"
             android:maxLength="10" android:textColor="#009688"
             app:layout_constraintStart_toStartOf="@+id/label_ciudad"
-            app:layout_constraintTop_toBottomOf="@+id/label_ciudad"
-    />
+            app:layout_constraintTop_toBottomOf="@+id/label_ciudad"/>
     <TextView
             android:text="@string/barrio"
             android:layout_width="114dp"
             android:layout_height="34dp"
             android:id="@+id/label_barrio" android:textColor="#009688"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
-            android:layout_marginStart="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/ciudad_negocio" android:layout_marginTop="16dp"/>
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="156dp"
+            android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/label_pais" android:layout_marginBottom="156dp"
+            app:layout_constraintBottom_toTopOf="@+id/label_foto"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/barrio_negocio"
-            android:textColor="#009688" app:layout_constraintStart_toStartOf="@+id/label_barrio"
-            app:layout_constraintTop_toBottomOf="@+id/label_barrio"
-    />
+            android:textColor="#009688"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="@+id/label_barrio"
+            android:layout_marginTop="316dp"/>
     <TextView
             android:text="@string/direcci_n"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/label_direccion" android:textColor="#009688"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="24dp"
             android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
             app:layout_constraintTop_toBottomOf="@+id/barrio_negocio"/>
     <EditText
@@ -101,14 +100,15 @@
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/direccion_negocio"
-            android:textColor="#009688" app:layout_constraintStart_toStartOf="@+id/label_direccion"
+            android:textColor="#009688"
+            app:layout_constraintStart_toStartOf="@+id/label_direccion"
             app:layout_constraintTop_toBottomOf="@+id/label_direccion"/>
     <TextView
             android:text="@string/cargar_foto_de_tu_negocio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/label_foto" android:textColor="#009688"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="26dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="23dp"
             android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
             app:layout_constraintTop_toBottomOf="@+id/direccion_negocio"/>
     <ImageButton
@@ -117,4 +117,12 @@
             android:id="@+id/foto_negocio"
             app:layout_constraintStart_toStartOf="@+id/label_foto"
             app:layout_constraintTop_toBottomOf="@+id/label_foto"/>
+    <Button
+            android:text="atrás"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/atras_finalregistronegocio"
+            android:background="#FBFBFB" android:textColor="#F44336"
+            app:layout_constraintStart_toStartOf="@+id/foto_negocio" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
