@@ -22,8 +22,8 @@
             android:id="@+id/labelconocercliente1"
             android:clickable="false" android:background="#FBFBFB"
             android:textColor="#009688"
-            android:layout_marginTop="46dp"
-            android:layout_marginBottom="48dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="36dp" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/labelprimernombre" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
     <TextView
@@ -94,8 +94,9 @@
             android:ems="10"
             android:id="@+id/segundoapellido_cliente"
             android:maxLength="10"
+            android:textColor="#009688"
             app:layout_constraintStart_toStartOf="@+id/label_segundoapellido"
-            app:layout_constraintTop_toBottomOf="@+id/label_segundoapellido" android:textColor="#009688"/>
+            app:layout_constraintTop_toBottomOf="@+id/label_segundoapellido"/>
     <Button
             android:text="Continuar"
             android:layout_width="wrap_content"
@@ -119,10 +120,11 @@
             android:layout_height="wrap_content"
             android:inputType="phone"
             android:ems="10"
-            android:id="@+id/movil_cliente"
+            android:id="@+id/movil_clientecompleto"
             android:maxLength="10"
+            android:textColor="#FF5722"
             app:layout_constraintStart_toStartOf="@+id/label_movilcliente"
-            app:layout_constraintTop_toBottomOf="@+id/label_movilcliente" android:textColor="#FF5722"/>
+            app:layout_constraintTop_toBottomOf="@+id/label_movilcliente"/>
     <TextView
             android:text="Número Móvil"
             android:layout_width="wrap_content"

@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_registro_cliente.*
-import kotlinx.android.synthetic.main.activity_registro_negocio.*
 
 class registro_cliente : AppCompatActivity() {
 
@@ -25,7 +24,7 @@ class registro_cliente : AppCompatActivity() {
             val primernombre_cliente = this.primernombre_cliente.getText().toString()
             val primerapellido_cliente = this.primerapellido_cliente.getText().toString()
             val segundoapellido_cliente = this.segundoapellido_cliente.getText().toString()
-            val movil_cliente = this.movil_cliente.getText().toString()
+            val movil_cliente = this.movil_clientecompleto.getText().toString()
             if (primernombre_cliente.equals("")) {
                 Toast.makeText(
                     this, "Debe ingresar su primer nombre",
@@ -51,6 +50,26 @@ class registro_cliente : AppCompatActivity() {
                             ).show();
                         } else {
                             val intent = Intent(this, registro_cliente1::class.java)
+                            var primer_nombre : String = this.primernombre_cliente.text.toString()
+                            var segundo_nombre : String = this.segundonombre_cliente.text.toString()
+                            var primer_apellido : String = this.primerapellido_cliente.text.toString()
+                            var segundo_apellido : String = this.segundoapellido_cliente.text.toString()
+                            var movil_clientecompleto : String = this.movil_clientecompleto.text.toString()
+                            val primernombre:Bundle = Bundle()
+                            primernombre.putString("primernombre",primer_nombre)
+                            intent.putExtras(primernombre)
+                            val segundonombre :Bundle = Bundle()
+                            segundonombre.putString("segundonombre",segundo_nombre)
+                            intent.putExtras(segundonombre)
+                            val primerapellido :Bundle = Bundle()
+                            primerapellido.putString("primerapellido",primer_apellido)
+                            intent.putExtras(primerapellido)
+                            val segundoapellido :Bundle = Bundle()
+                            segundoapellido.putString("segundoapellido",segundo_apellido)
+                            intent.putExtras(segundoapellido)
+                            val movilcliente :Bundle = Bundle()
+                            movilcliente.putString("movilcliente",movil_clientecompleto)
+                            intent.putExtras(movilcliente)
                             startActivity(intent)
                         }
                     }

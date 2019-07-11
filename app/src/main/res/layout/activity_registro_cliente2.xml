@@ -5,49 +5,56 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".registro_cliente2">
+        tools:context=".registro_cliente2" android:visibility="visible">
     <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:text="@string/bienvenido_a_lared"
             android:id="@+id/estas_enred"
             android:textColor="#009688" android:textColorHighlight="#E91E63"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="16dp" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
-            android:layout_marginBottom="56dp" app:layout_constraintBottom_toTopOf="@+id/labelconocercliente1"
-            android:visibility="invisible"/>
+            android:visibility="invisible"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp" app:layout_constraintEnd_toEndOf="@+id/email_cliente"
+            app:layout_constraintTop_toTopOf="@+id/primer_nombre"
+            app:layout_constraintStart_toStartOf="@+id/primer_nombre" android:layout_marginLeft="3dp"
+            app:layout_constraintBottom_toBottomOf="@+id/segundo_apellido" android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp" android:layout_marginRight="3dp"/>
     <TextView
             android:text="Donde estás ubicado?"
-            android:layout_width="149dp"
-            android:layout_height="0dp"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
             android:id="@+id/labelconocercliente1"
             android:clickable="false" android:background="#FBFBFB"
             android:textColor="#009688"
-            app:layout_constraintTop_toBottomOf="@+id/estas_enred"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="36dp"/>
+            android:layout_marginTop="44dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/label_paiscliente" app:layout_constraintVertical_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
     <TextView
             android:text="País"
-            android:layout_width="56dp"
-            android:layout_height="20dp"
+            android:layout_width="75dp"
+            android:layout_height="26dp"
             android:id="@+id/label_paiscliente" android:textColor="#009688"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="16dp" android:layout_marginTop="144dp" android:layout_marginStart="16dp"/>
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="124dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/pais_cliente"
-            android:textColor="#009688" app:layout_constraintStart_toStartOf="@+id/label_paiscliente"
+            android:textColor="#009688"
+            app:layout_constraintStart_toStartOf="@+id/label_paiscliente" android:layout_marginTop="2dp"
             app:layout_constraintTop_toBottomOf="@+id/label_paiscliente"/>
     <TextView
             android:text="Ciudad"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="62dp"
+            android:layout_height="20dp"
             android:id="@+id/label_ciudadcliente" android:textColor="#009688"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="20dp"
-            android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="@+id/pais_cliente"
+            android:layout_marginTop="24dp"
             app:layout_constraintTop_toBottomOf="@+id/pais_cliente"/>
     <EditText
             android:layout_width="wrap_content"
@@ -55,48 +62,125 @@
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/ciudad_cliente" android:textColor="#009688"
-            app:layout_constraintStart_toStartOf="@+id/label_ciudadcliente"
-            app:layout_constraintTop_toBottomOf="@+id/label_ciudadcliente"/>
+            app:layout_constraintTop_toBottomOf="@+id/label_ciudadcliente"
+            app:layout_constraintStart_toStartOf="@+id/label_ciudadcliente"/>
     <TextView
             android:text="Barrio de Preferencia"
-            android:layout_width="wrap_content"
-            android:layout_height="22dp"
+            android:layout_width="143dp"
+            android:layout_height="20dp"
             android:id="@+id/label_barriocliente" android:textColor="#009688"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="20dp"
-            android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/ciudad_cliente"/>
+            android:layout_marginTop="28dp"
+            app:layout_constraintTop_toBottomOf="@+id/ciudad_cliente"
+            app:layout_constraintStart_toStartOf="@+id/ciudad_cliente"/>
     <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/barrio_cliente" android:textColor="#009688"
+            app:layout_constraintTop_toBottomOf="@+id/label_barriocliente"
             app:layout_constraintStart_toStartOf="@+id/label_barriocliente"
-            app:layout_constraintTop_toBottomOf="@+id/label_barriocliente"/>
+            android:layout_marginTop="4dp"/>
     <CheckBox
             android:text="Deseo recibir notificaciones de promociones de los negocios aliados en mi barrio de preferencia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
             android:id="@+id/recibir_notificacionescliente"
             android:textColor="#009688" android:textColorHighlight="#FFEB3B"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="56dp"
-            android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/barrio_cliente"/>
+            android:layout_marginBottom="276dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="47dp"
+            app:layout_constraintTop_toBottomOf="@+id/barrio_cliente" app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp" android:layout_marginEnd="27dp" android:layout_marginRight="27dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
     <Button
             android:text="Registrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/registrar_cliente" android:textColor="#009688"
-            android:background="#FBFBFB" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="16dp"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.95"/>
+            android:background="#FBFBFB"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
     <Button
             android:text="Atrás"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/atras_finalcliente" android:background="#FBFBFB"
-            android:textColor="#F44336" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="16dp"
-            android:layout_marginBottom="16dp"/>
+            android:textColor="#F44336"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/primer_nombre"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/label_paiscliente"
+            app:layout_constraintEnd_toEndOf="@+id/email_cliente"
+            app:layout_constraintBottom_toTopOf="@+id/movil_clientecompleto"
+            app:layout_constraintStart_toStartOf="@+id/email_cliente" android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp" android:layout_marginEnd="3dp" android:layout_marginRight="3dp"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:id="@+id/segundo_nombre" android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@+id/primer_nombre"
+            app:layout_constraintBaseline_toBaselineOf="@+id/segundo_apellido"
+            app:layout_constraintEnd_toEndOf="@+id/primer_nombre"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/primer_apellido"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/movil_clientecompleto"
+            app:layout_constraintEnd_toEndOf="@+id/movil_clientecompleto"
+            app:layout_constraintBottom_toTopOf="@+id/segundo_apellido"
+            app:layout_constraintStart_toStartOf="@+id/tipo_doccliente" android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp" android:layout_marginEnd="3dp" android:layout_marginRight="3dp"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/segundo_apellido"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/primer_apellido"
+            app:layout_constraintEnd_toEndOf="@+id/primer_nombre"
+            app:layout_constraintBottom_toTopOf="@+id/numdoc_cliente"
+            app:layout_constraintStart_toStartOf="@+id/primer_nombre"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/movil_clientecompleto"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/primer_nombre"
+            app:layout_constraintEnd_toStartOf="@+id/registrar_cliente"
+            app:layout_constraintBottom_toTopOf="@+id/primer_apellido" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="57dp" android:layout_marginStart="57dp" android:layout_marginEnd="58dp"
+            android:layout_marginRight="58dp"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:id="@+id/tipo_doccliente"
+            android:visibility="invisible"
+            app:layout_constraintBaseline_toBaselineOf="@+id/email_cliente"
+            app:layout_constraintEnd_toEndOf="@+id/movil_clientecompleto"
+            app:layout_constraintStart_toStartOf="@+id/email_cliente" android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" android:layout_marginEnd="9dp" android:layout_marginRight="9dp"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/numdoc_cliente"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/segundo_apellido" android:layout_marginBottom="130dp"
+            app:layout_constraintEnd_toEndOf="@+id/primer_nombre"
+            app:layout_constraintStart_toStartOf="@+id/primer_nombre" app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:layout_width="194dp"
+            android:layout_height="34dp"
+            android:id="@+id/email_cliente"
+            android:visibility="invisible"
+            app:layout_constraintBaseline_toBaselineOf="@+id/primer_nombre" android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp" app:layout_constraintEnd_toEndOf="@+id/movil_clientecompleto"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
