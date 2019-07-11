@@ -6,14 +6,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_registro_cliente2.*
-import kotlinx.android.synthetic.main.activity_registro_cliente2.email_cliente
-import kotlinx.android.synthetic.main.activity_registro_cliente2.movil_clientecompleto
-import kotlinx.android.synthetic.main.activity_registro_cliente2.numdoc_cliente
-import kotlinx.android.synthetic.main.activity_registro_cliente2.primer_apellido
-import kotlinx.android.synthetic.main.activity_registro_cliente2.primer_nombre
-import kotlinx.android.synthetic.main.activity_registro_cliente2.segundo_apellido
-import kotlinx.android.synthetic.main.activity_registro_cliente2.segundo_nombre
-import kotlinx.android.synthetic.main.activity_registro_cliente2.tipo_doccliente
 
 class registro_cliente2 : AppCompatActivity() {
 
@@ -53,24 +45,24 @@ class registro_cliente2 : AppCompatActivity() {
 
         val registrar_cliente: Button = findViewById(R.id.registrar_cliente)
         registrar_cliente.setOnClickListener {
-            val pais_cliente = this.pais_cliente.getText().toString()
+            val pais_cliente = this.pais_cliente.getSelectedItem().toString()
             val ciudad_cliente = this.ciudad_cliente.getText().toString()
             val barrio_cliente = this.barrio_cliente.getText().toString()
-            if (pais_cliente.equals("")) {
+            if (pais_cliente.equals("Escoja su país de residencia")) {
                 Toast.makeText(
-                    this, "Debe escoger el pais donde está ubicado",
+                    this, "Debe escoger el pais donde vive",
                     Toast.LENGTH_LONG
                 ).show();
             } else {
                 if (ciudad_cliente.equals("")) {
                     Toast.makeText(
-                        this, "Debe escoger la ciudad donde está ubicado",
+                        this, "Debe escoger la ciudad donde vive",
                         Toast.LENGTH_LONG
                     ).show();
                 } else {
                     if (barrio_cliente.equals("")) {
                         Toast.makeText(
-                            this, "Debe escoger el barrio donde está ubicado",
+                            this, "Debe escoger el barrio de preferencia",
                             Toast.LENGTH_LONG
                         ).show();
                     } else {
@@ -83,6 +75,9 @@ class registro_cliente2 : AppCompatActivity() {
                         var tipo_doc_cliente : String = this.tipo_doccliente.text.toString()
                         var num_doccliente : String = this.numdoc_cliente.text.toString()
                         var email_cliente : String = this.email_cliente.text.toString()
+                        var pais_cliente : String = this.pais_cliente.selectedItem.toString()
+                        var ciudad_cliente : String = this.ciudad_cliente.text.toString()
+                        var barrio_cliente : String = this.barrio_cliente.text.toString()
                         val primernombre:Bundle = Bundle()
                         primernombre.putString("primernombre",primer_nombre)
                         intent.putExtras(primernombre)
@@ -105,7 +100,7 @@ class registro_cliente2 : AppCompatActivity() {
                         movilclientecompleto.putString("movilclientecompleto","Número Celular: " + movil_cliente)
                         intent.putExtras(movilclientecompleto)
                         val documentocompleto :Bundle = Bundle()
-                        documentocompleto.putString("documentocompleto","Número de Documento: " + tipo_doc_cliente + "_" + num_doccliente)
+                        documentocompleto.putString("documentocompleto",tipo_doc_cliente + ": " + num_doccliente)
                         intent.putExtras(documentocompleto)
                         val tipodoccliente :Bundle = Bundle()
                         tipodoccliente.putString("tipodoccliente",tipo_doc_cliente)
@@ -119,6 +114,24 @@ class registro_cliente2 : AppCompatActivity() {
                         val emailcliente :Bundle = Bundle()
                         emailcliente.putString("emailcliente",email_cliente)
                         intent.putExtras(emailcliente)
+                        val paisclientecompleto :Bundle = Bundle()
+                        paisclientecompleto.putString("paisclientecompleto","País de residencia: " + pais_cliente)
+                        intent.putExtras(paisclientecompleto)
+                        val paiscliente :Bundle = Bundle()
+                        paiscliente.putString("paiscliente",pais_cliente)
+                        intent.putExtras(paiscliente)
+                        val ciudadclientecompleto :Bundle = Bundle()
+                        ciudadclientecompleto.putString("ciudadclientecompleto","Ciudad de residencia: " + ciudad_cliente)
+                        intent.putExtras(ciudadclientecompleto)
+                        val ciudadcliente :Bundle = Bundle()
+                        ciudadcliente.putString("ciudadcliente",ciudad_cliente)
+                        intent.putExtras(ciudadcliente)
+                        val barrioclientecompleto :Bundle = Bundle()
+                        barrioclientecompleto.putString("barrioclientecompleto","Barrio de preferencia: " + barrio_cliente)
+                        intent.putExtras(barrioclientecompleto)
+                        val barriocliente :Bundle = Bundle()
+                        barriocliente.putString("barriocliente",barrio_cliente)
+                        intent.putExtras(barriocliente)
                         startActivity(intent)
                         Toast.makeText(
                             this, "Resumen de datos suministrados",

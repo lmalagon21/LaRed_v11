@@ -25,6 +25,15 @@ class registro_cliente4 : AppCompatActivity() {
         val emailclientecompletobundle: Bundle? = intent.extras
         emailclientecompleto.text = emailclientecompletobundle!!.getString("emailclientecompleto")
 
+        val paisclientecompletobundle: Bundle? = intent.extras
+        paiscompleto_cliente.text = paisclientecompletobundle!!.getString("paisclientecompleto")
+
+        val ciudadclientecompletobundle: Bundle? = intent.extras
+        ciudadcompleto_cliente.text = ciudadclientecompletobundle!!.getString("ciudadclientecompleto")
+
+        val barrioclientecompletobundle: Bundle? = intent.extras
+        barriocompleto_cliente.text = barrioclientecompletobundle!!.getString("barrioclientecompleto")
+
         val atras_registroclientecompleto : Button = findViewById(R.id.atras_registrarclientecompleto)
         atras_registroclientecompleto.setOnClickListener {
             val intent = Intent(this, registro_cliente2::class.java)

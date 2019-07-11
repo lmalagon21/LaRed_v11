@@ -115,4 +115,44 @@
         <item>Uruguay</item>
         <item>Venezuela</item>
     </string-array>
+    <string-array name="pais_cliente">
+        <item>Escoja su país de residencia</item>
+        <item>Colombia</item>
+        <item>Antigua y Barbuda</item>
+        <item>Argentina</item>
+        <item>Bahamas</item>
+        <item>Barbados</item>
+        <item>Belice</item>
+        <item>Bolivia</item>
+        <item>Brasil</item>
+        <item>Canadá</item>
+        <item>Chile</item>
+        <item>Costa Rica</item>
+        <item>Cuba</item>
+        <item>Dominica</item>
+        <item>Ecuador</item>
+        <item>El Salvador</item>
+        <item>EEUU</item>
+        <item>Grenada</item>
+        <item>Guatemala</item>
+        <item>Guayana Francesa</item>
+        <item>Guyana</item>
+        <item>Haití</item>
+        <item>Honduras</item>
+        <item>Jamaica</item>
+        <item>México</item>
+        <item>Nicaragua</item>
+        <item>Panamá</item>
+        <item>Paraguay</item>
+        <item>Perú</item>
+        <item>Puerto Rico</item>
+        <item>República Dominicana</item>
+        <item>San Cristóbal y Nevis</item>
+        <item>San Vicente y Granadinas</item>
+        <item>Santa Lucía</item>
+        <item>Surinam</item>
+        <item>Trinidad y Tobago</item>
+        <item>Uruguay</item>
+        <item>Venezuela</item>
+    </string-array>
 </resources>
