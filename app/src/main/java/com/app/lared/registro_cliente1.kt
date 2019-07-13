@@ -29,12 +29,6 @@ class registro_cliente1 : AppCompatActivity() {
         val movilclientebundle:Bundle? = intent.extras
         movil_clientecompleto.text = movilclientebundle!!.getString("movilcliente")
 
-        val atras_registrocliente1 : Button = findViewById(R.id.atras_registrocliente1)
-        atras_registrocliente1.setOnClickListener {
-            val intent = Intent(this, registro_cliente :: class.java)
-            startActivity(intent)
-        }
-
         val cont_regcliente1 : Button = findViewById(R.id.cont_regcliente1)
         cont_regcliente1.setOnClickListener {
             val tipo_doccliente = this.tipo_doc_cliente.getSelectedItem().toString()
@@ -79,7 +73,7 @@ class registro_cliente1 : AppCompatActivity() {
                                     var movil_cliente : String = this.movil_clientecompleto.text.toString()
                                     var tipo_doc_cliente : String = this.tipo_doc_cliente.selectedItem.toString()
                                     var num_doccliente : String = this.numdoccliente.text.toString()
-                                    var email_cliente : String = this.email_cliente.text.toString()
+                                    var emailCliente : String = this.email_cliente.text.toString()
                                     val primernombre:Bundle = Bundle()
                                     primernombre.putString("primernombre",primer_nombre)
                                     intent.putExtras(primernombre)
@@ -102,7 +96,7 @@ class registro_cliente1 : AppCompatActivity() {
                                     numdoccliente.putString("numdoccliente",num_doccliente)
                                     intent.putExtras(numdoccliente)
                                     val emailcliente :Bundle = Bundle()
-                                    emailcliente.putString("emailcliente",email_cliente)
+                                    emailcliente.putString("emailcliente",emailCliente)
                                     intent.putExtras(emailcliente)
                                     startActivity(intent)
                                 } else {
@@ -116,6 +110,12 @@ class registro_cliente1 : AppCompatActivity() {
                     }
                 }
             }
+        }
+
+        val atras_registrocliente1 : Button = findViewById(R.id.atras_registrocliente1)
+        atras_registrocliente1.setOnClickListener {
+            val intent = Intent(this, registro_cliente :: class.java)
+            startActivity(intent)
         }
     }
 }

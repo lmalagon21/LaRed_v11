@@ -78,7 +78,6 @@
     <string-array name="pais_negocio">
         <item>Escoja el país de ubicación de su negocio</item>
         <item>Colombia</item>
-        <item>Antigua y Barbuda</item>
         <item>Argentina</item>
         <item>Bahamas</item>
         <item>Barbados</item>
@@ -115,44 +114,52 @@
         <item>Uruguay</item>
         <item>Venezuela</item>
     </string-array>
-    <string-array name="pais_cliente">
-        <item>Escoja su país de residencia</item>
-        <item>Colombia</item>
-        <item>Antigua y Barbuda</item>
-        <item>Argentina</item>
-        <item>Bahamas</item>
-        <item>Barbados</item>
-        <item>Belice</item>
-        <item>Bolivia</item>
-        <item>Brasil</item>
-        <item>Canadá</item>
-        <item>Chile</item>
-        <item>Costa Rica</item>
-        <item>Cuba</item>
-        <item>Dominica</item>
-        <item>Ecuador</item>
-        <item>El Salvador</item>
-        <item>EEUU</item>
-        <item>Grenada</item>
-        <item>Guatemala</item>
-        <item>Guayana Francesa</item>
-        <item>Guyana</item>
-        <item>Haití</item>
-        <item>Honduras</item>
-        <item>Jamaica</item>
-        <item>México</item>
-        <item>Nicaragua</item>
-        <item>Panamá</item>
-        <item>Paraguay</item>
-        <item>Perú</item>
-        <item>Puerto Rico</item>
-        <item>República Dominicana</item>
-        <item>San Cristóbal y Nevis</item>
-        <item>San Vicente y Granadinas</item>
-        <item>Santa Lucía</item>
-        <item>Surinam</item>
-        <item>Trinidad y Tobago</item>
-        <item>Uruguay</item>
-        <item>Venezuela</item>
+    <string-array name="barrios_medellin">
+        <item>Escoja su barrio de preferencia</item>
+        <item>*COMUNA 1*</item>
+            <item>Carpinelo</item>
+            <item>El Compromiso</item>
+            <item>Granizal</item>
+            <item>La Avanzada</item>
+            <item>La Esperanza Nº 2</item>
+            <item>Moscú Nº 2</item>
+            <item>Popular Nº 1</item>
+            <item>Popular Nº 2</item>
+            <item>Santo Domingo Savio Nº 1</item>
+            <item>Santo Domingo Savio Nº 2</item>
+            <item>San Pablo</item>
+            <item>Villa Guadalupe</item>
+        <item>*COMUNA 2*</item>
+            <item>Santa Cruz</item>
+            <item>La Isla</item>
+            <item>El Playón de Los Comuneros</item>
+            <item>Pablo VI</item>
+            <item>La Frontera</item>
+            <item>La Francia</item>
+            <item>Andalucía</item>
+            <item>Villa del Socorro</item>
+            <item>Villa Niza</item>
+            <item>Moscú Nº 1</item>
+            <item>La Rosa</item>
+    </string-array>
+    <string-array name="pregunta1_cliente">
+        <item>Escoja la primera pregunta</item>
+        <item>Apodo en la niñez?</item>
+        <item>Nombre primera mascota?</item>
+        <item>Primera ciudad que visité?</item>
+        <item>Apodo de mi mejor amigo(a) de la niñez?</item>
+        <item>Video Juego que no me gusta?</item>
+        <item>Año de mi primer vuelo en avión?</item>
+        <item>Apellido de mi mejor amigo(a) en el colegio?</item>
+    </string-array>
+    <string-array name="pregunta2_cliente">
+        <item>Escoja la segunda pregunta</item>
+        <item>Apodo en la niñez?</item>
+        <item>Nombre primera mascota?</item>
+        <item>Primera ciudad que visité?</item>
+        <item>Apodo de mi mejor amigo(a) de la niñez?</item>
+        <item>Video Juego que no me gusta?</item>
+        <item>Año de mi primer vuelo en avión?</item>
+        <item>Apellido de mi mejor amigo(a) en el colegio?</item>
     </string-array>
 </resources>

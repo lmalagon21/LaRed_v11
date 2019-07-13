@@ -38,6 +38,11 @@
     <TextView
             android:text="TextView"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/departamentocompleto_cliente"
+            android:layout_margin="15dp" android:textColor="#00BFA5"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/ciudadcompleto_cliente" android:textColor="#00BFA5"
             android:layout_margin="15dp"/>
     <TextView
@@ -56,6 +61,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/atras_registrarclientecompleto"
             android:layout_marginRight="40dp"
-            android:layout_marginLeft="170dp" android:layout_marginTop="30dp" android:background="#FBFBFB"
+            android:layout_marginLeft="170dp" android:layout_marginTop="25dp" android:background="#FBFBFB"
             android:textColor="#D50000"/>
 </LinearLayout>

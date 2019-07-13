@@ -28,6 +28,9 @@ class registro_cliente4 : AppCompatActivity() {
         val paisclientecompletobundle: Bundle? = intent.extras
         paiscompleto_cliente.text = paisclientecompletobundle!!.getString("paisclientecompleto")
 
+        val departamentoclientecompletobundle: Bundle? = intent.extras
+        departamentocompleto_cliente.text = departamentoclientecompletobundle!!.getString("departamentoclientecompleto")
+
         val ciudadclientecompletobundle: Bundle? = intent.extras
         ciudadcompleto_cliente.text = ciudadclientecompletobundle!!.getString("ciudadclientecompleto")
 
